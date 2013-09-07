@@ -1,0 +1,1 @@
+S:/MinGW/MPI/include;S:/MinGW/include;S:/CLANG/SW/build4VS11/lib/clang/3.4/include;

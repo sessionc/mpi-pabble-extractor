@@ -1,0 +1,22 @@
+/*The protocol generated is stable!*/
+
+const N= 10..Inf
+
+global protocol simple_ProToCoL (role MPI_COMM_WORLD[0..N-1])
+{
+Data(MPI_INT) from MPI_COMM_WORLD[rank:0..7] to MPI_COMM_WORLD[rank+1];
+
+
+Data(MPI_INT) from MPI_COMM_WORLD[rank:1..8] to MPI_COMM_WORLD[rank-1];
+
+
+Data(MPI_INT) from MPI_COMM_WORLD[rank:1..8] to MPI_COMM_WORLD[rank-1];
+
+
+Data(MPI_INT) from MPI_COMM_WORLD[0..N-1] to MPI_COMM_WORLD[0]
+
+Data(MPI_INT) from MPI_COMM_WORLD[0..N-1] to MPI_COMM_WORLD[5]
+
+Data(MPI_INT) from MPI_COMM_WORLD[0] to MPI_COMM_WORLD[0..N-1]
+}
+

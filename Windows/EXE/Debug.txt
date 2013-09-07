@@ -1,0 +1,19 @@
+
+
+
+
+
+
+Deadlock occurs!!!
+The current pending operations are:
+MPI_Isend (buf0, buf_size, MPI_INT, rank+1, 0, MPI_COMM_WORLD, &req)
+MPI_Isend (buf0, buf_size, MPI_INT, rank-1, 0, MPI_COMM_WORLD,&req2)
+
+No pending collective operation!
+
+
+
+
+
+The program used 0.249 seconds to generate the protocol.
+

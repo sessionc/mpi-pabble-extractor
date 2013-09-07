@@ -1,0 +1,5 @@
+
+Deadlock occurs!!!
+The current pending operations are:
+
+MPI_Reduce( buf0, buf1, 100, MPI_INT, MPI_SUM, reduceRoot, comm )

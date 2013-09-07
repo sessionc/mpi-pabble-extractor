@@ -1,0 +1,16 @@
+
+Ready to simulate the execution of the MPI program now!
+There are 1 communicator groups involved
+The param role name is MPI_COMM_WORLD
+The actual roles for this param role are:
+The role 0 is MPI_COMM_WORLD[0..N-1]
+The role 1 is MPI_COMM_WORLD[0..0]
+The role 2 is MPI_COMM_WORLD[1..N-1]
+The role 3 is MPI_COMM_WORLD[1..1]
+The role 4 is MPI_COMM_WORLD[5..5]
+The role 5 is MPI_COMM_WORLD[6..0]
+The role 6 is MPI_COMM_WORLD[2..4]
+The role 7 is MPI_COMM_WORLD[3..6]
+The role 8 is MPI_COMM_WORLD[11..N-1]
+The role 9 is MPI_COMM_WORLD[0..2]
+The role 10 is MPI_COMM_WORLD[7..10]

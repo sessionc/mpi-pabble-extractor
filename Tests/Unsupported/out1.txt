@@ -1,0 +1,2 @@
+
+Condition rank==0 and Condition nonRankVar==1 are not compatible. They need to be both rank related or non-rank related.

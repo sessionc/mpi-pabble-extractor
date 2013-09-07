@@ -1,0 +1,19 @@
+##===- tools/clang-check/Makefile --------------------------*- Makefile -*-===##
+#
+#                     The LLVM Compiler Infrastructure
+#
+# This file is distributed under the University of Illinois Open Source
+# License. See LICENSE.TXT for details.
+#
+##===----------------------------------------------------------------------===##
+#LLVM_SRC_ROOT = /home/xiaohe/FYP/LLVM/llvm
+#LLVM_OBJ_ROOT = /home/xiaohe/FYP/LLVM/build
+
+CLANG_LEVEL := ../..
+
+DIRS = tools
+EXTRA_DIST = include
+
+
+include Makefile.common
+include $(CLANG_LEVEL)/Makefile

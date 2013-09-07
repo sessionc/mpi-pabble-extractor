@@ -1,0 +1,17 @@
+
+/*The protocol generated is stable!*/
+
+const N= 13..Inf
+
+global protocol lfp_ProToCoL (role MPI_COMM_WORLD[0..N-1])
+{
+Data(MPI_INT) from MPI_COMM_WORLD[rank:5..5] to MPI_COMM_WORLD[rank+1];
+
+
+Data(MPI_INT) from MPI_COMM_WORLD[11] to MPI_COMM_WORLD[0..N-1];
+
+
+Data(MPI_INT) from MPI_COMM_WORLD[0..N-1] to MPI_COMM_WORLD[N/2+1];
+
+}
+

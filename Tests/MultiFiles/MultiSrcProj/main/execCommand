@@ -1,0 +1,1 @@
+mpicc -std=c99 main.c sib.c ../outer/uncle.c inner/child.c ../parent.c -o completPgm

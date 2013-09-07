@@ -1,0 +1,25 @@
+#include "mpi.h"
+int main (int argc, char **argv){
+  int rank=-1;
+  int nprocs = -1;
+  int test=0;
+
+  MPI_Init (&argc, &argv);
+  MPI_Comm_size ( MPI_COMM_WORLD , &nprocs);
+  MPI_Comm_rank (  MPI_COMM_WORLD ,  &rank);
+
+  if(rank>2 && rank <7){
+		if(rank==1 || rank==5){}
+  }
+
+  if(test==2){
+	for(int i=0; i<10; i++){
+		if(rank==7){}
+	}
+  } else{
+		if(rank==22){}
+  }
+
+  MPI_Barrier (MPI_COMM_WORLD);
+  MPI_Finalize (); 
+}

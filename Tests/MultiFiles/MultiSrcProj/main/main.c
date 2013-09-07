@@ -1,0 +1,42 @@
+#include "spec.h"
+
+
+  int nprocs = -1;
+  int rank = -1;
+  int sendarray[100]; 
+  char processor_name[128];
+  int namelen = 128;
+
+int main (int argc, char **argv)
+{
+  MPI_Init (&argc, &argv);
+  MPI_Comm_size ( MPI_COMM_WORLD , &nprocs);
+  MPI_Comm_rank (  MPI_COMM_WORLD ,  &  rank  );
+  MPI_Get_processor_name (processor_name, &namelen);
+
+  MPI_Comm comm=MPI_COMM_WORLD;
+
+helloUncle(); //testMulti2();
+helloSib(); //testDiffRanksCallSameMethod();
+helloParent(); //testWait();
+helloChild(); //testMultiSenderAndMultiRecver();
+
+
+  MPI_Barrier (comm); //release mode: 7.156s
+
+
+  int check;
+  printf ("Checking if processor is available...");
+  if (system(NULL)) puts ("Ok");
+    else exit (EXIT_FAILURE);
+  printf ("Executing command DIR...\n");
+  check=system ("dir");
+  printf ("The value returned was: %d.\n",check);
+
+
+  MPI_Finalize (); 
+  printf ("(%d) Finished normally\n", rank); return 0;
+
+}
+
+
